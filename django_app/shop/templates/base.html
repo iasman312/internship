@@ -12,11 +12,12 @@
             {% block menu %}{% endblock %}
             {% if user.is_authenticated %}
                {% block menu_links %}{% endblock %}
-                   <li class="menu-right"><a href="{% url 'logout' %}?next={{ request.get_full_path }}" class="nav-link">Выход</a></li>
-                   <li class="menu-right">Привет, {{ user.username }}!</li>
+                   <li><a href="{% url 'logout' %}?next={{ request.get_full_path }}">Выход</a></li>
+                   <li>Привет, {{ user.username }}!</li>
+                   <li><a href="{% url 'update-user' %}?next={{ request.get_full_path }}">Изменить профиль</a></li>
            {% else %}
-               <li class="menu-right"><a href="{% url 'login' %}?next={{ request.get_full_path }}" class="nav-link">Вход</a>
-               <li class="menu-right"><a href="{% url 'create' %}?next={{ request.get_full_path }}" class="nav-link">Регистрация</a></li>
+               <li><a href="{% url 'login' %}?next={{ request.get_full_path }}" class="nav-link">Вход</a>
+               <li><a href="{% url 'create' %}?next={{ request.get_full_path }}" class="nav-link">Регистрация</a></li>
            {% endif %}
         </ul>
     </nav>

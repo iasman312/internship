@@ -14,3 +14,15 @@ def register_view(request, *args, **kwargs):
         form = MyUserCreationForm()
     return render(request, 'registration/user_create.html', context={'form':
                                                                          form})
+
+
+def update_user(request, template_name="registration/update_user.html"):
+    form = MyUserCreationForm(instance=request.user)
+    if request.method == "POST":
+        form = MyUserCreationForm(data=request.POST, instance=request.user)
+        if form.is_valid():
+            user = form.save(commit=False)
+            user.save()
+            return redirect('product-list')
+
+    return render(request, template_name, context={'form': form})
