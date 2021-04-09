@@ -6,5 +6,7 @@
 {% block page_header %}Все товары{% endblock page_header %}
 
 {% block content %}
-              <p><a href="">{{ product.name }}</a></p>
+    {% for product in products %}
+        <p><a href="">{{ product.name }}</a></p>
+    {% endfor %}
 {% endblock content %}

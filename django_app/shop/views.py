@@ -3,6 +3,6 @@ from .models import Product
 
 
 class IndexView(ListView):
-    template_name = 'products/index.html'
+    template_name = 'index.html'
     model = Product
     context_object_name = 'products'
