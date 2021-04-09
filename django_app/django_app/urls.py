@@ -8,6 +8,6 @@ HOMEPAGE_URL = 'products/'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('products/', include('shop.urls')),
-    path('accounts', include('accounts.urls')),
+    path('accounts/', include('accounts.urls')),
     path('', RedirectView.as_view(url=HOMEPAGE_URL, permanent=True))
 ]
