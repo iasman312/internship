@@ -1,0 +1,106 @@
+[
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "name": "Acer Nitro 5",
+    "description": "Хороший ноутбук",
+    "category": 1,
+    "price": "700.00"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 2,
+  "fields": {
+    "name": "Samsung Galaxy J3",
+    "description": "Нормальный смартфон",
+    "category": 4,
+    "price": "100.00"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "name": "Sony Monitor",
+    "description": "Отличный монитор",
+    "category": 2,
+    "price": "300.00"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 4,
+  "fields": {
+    "name": "Sony wf sp-800n",
+    "description": "Великолепные наушники",
+    "category": 3,
+    "price": "200.00"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 1,
+  "fields": {
+    "name": "Ноутбук"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {
+    "name": "Монитор"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 3,
+  "fields": {
+    "name": "Наушники"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 4,
+  "fields": {
+    "name": "Телефон"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$h73a1t37K8mH$cGVmtAQn4Tme0wpZ5gU0u8G56R0e3dNbGB+RuwssiMU=",
+    "last_login": "2021-04-09T10:31:12.373Z",
+    "is_superuser": true,
+    "username": "asman",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-04-09T08:17:30.604Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$Pmcf50BRvZuQ$5IMnXeVlwtUPfZoeoiZxcua6ZuaOj7SVwcDtCwFGdzI=",
+    "last_login": "2021-04-09T10:45:28.245Z",
+    "is_superuser": false,
+    "username": "admin",
+    "first_name": "Ba",
+    "last_name": "Ibraimov",
+    "email": "iasman312@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-04-09T09:47:13.054Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
