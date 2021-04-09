@@ -10,7 +10,7 @@
 <body>
 <div>
     <h1>Вход</h1>
-    <form action="{% url 'login' %}" method="post" class="text-center">
+    <form action="" method="post">
         {% csrf_token %}
         {% if has_error %}
             <p>Неверное имя пользователя или пароль.</p>
