@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block page_header %}Товар {{ product.id }}{% endblock page_header %}
+
+{% block content %}
+    <h5>{{ product.name }}</h5>
+    <h6>${{ product.price }}</h6>
+    <p>{{ product.description }}</p>
+    <p>{{ product.category }}</p>
+{% endblock content %}
